@@ -1,0 +1,36 @@
+:host {
+  transition: 0.3s;
+  width: 0;
+}
+
+.sidenav {
+  color: rgb(170, 170, 170);
+  border-color: #ffc376;
+  border-style: solid;
+  border-width: thin thin thin 0;
+  height: calc(100% - 62px);
+  width: 0;
+  position: relative;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.3s;
+  background-color: rgb(66, 66, 66);
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 32px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: rgb(255, 195, 118);
+}
+
+.menu-open {
+  width: 280px;
+}

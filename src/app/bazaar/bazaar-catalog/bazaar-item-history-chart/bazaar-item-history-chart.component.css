@@ -1,0 +1,27 @@
+:host {
+  display: inline-flex;
+  background-color: var(--secondary-background-color);
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  --p-progressspinner-color-1 : var(--third-color);
+  --p-progressspinner-color-2 : var(--third-color);
+  --p-progressspinner-color-3 : var(--third-color);
+  --p-progressspinner-color-4 : var(--third-color);
+  --p-radiobutton-width : 1rem;
+  --p-radiobutton-height : 1rem;
+  --p-radiobutton-icon-checked-color : red;
+  --p-radiobutton-border-color : white;
+  --p-radiobutton-checked-border-color : blue;
+}
+.radio-container{
+  align-items: center;
+  display: inline-flex;
+  width: 100%;
+}
+.craft-description{
+  font-size: 1rem;
+}

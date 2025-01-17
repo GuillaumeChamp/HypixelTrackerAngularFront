@@ -1,1 +1,138 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: customFont;
+  src: url(/assets/myFont.ttf);
+}
+
+:root{
+  --primary-color : #FFF;
+  --secondary-color : rgb(170, 170, 170);
+  --third-color : #ffc376;
+  --primary-background-color : rgba(0, 0, 0, 1);
+  --secondary-background-color : rgb(66, 66, 66);
+  --p-mask-background : rgba(66, 66, 66,0.5);
+  --p-dialog-color : var(--primary-color);
+  --p-dialog-border-color : var(--third-color);
+  --p-dialog-background : var(--secondary-background-color);
+}
+:host, :root {
+  font-family: customFont, serif;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 0;
+  padding-bottom: 2.5rem;
+  background-color: var(--primary-background-color);
+  border-color: var(--third-color);
+  color: var(--primary-color);
+  font-size: 1rem;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+.multi-usage-button{
+  flex: 1 0 0 0;
+  text-align: center;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.active {
+  display: flex !important;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  flex-direction: row;
+  text-align: center;
+  vertical-align: center;
+  background-color: var(--secondary-background-color);
+  width: 100%;
+  height: 2.5rem;
+}
+
+
+.common {
+  color: #FFFFFF !important;
+}
+
+.uncommon {
+  color: #55FF55 !important;
+}
+
+.rare {
+  color: #5555FF !important;
+}
+
+.epic {
+  color: #AA00AA !important;
+}
+
+.legendary {
+  color: #FFAA00 !important;
+}
+
+.mythic {
+  color: #FF55FF !important;
+}
+
+.special {
+  color: #FF5555 !important;
+}
+
+.no-tier {
+  color: #BBBBBB;
+}
+
+.undefined {
+  color: #BBBBBB;
+  text-decoration: line-through;
+}
+
+:root .p-dialog{
+  border: 2px solid var(--p-dialog-border-color);
+}
+
+.p-dialog-header{
+  width: 100%;
+  height: fit-content;
+  background-color: var(--third-color);
+}
+
+.p-dialog-title{
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  background-color: var(--third-color);
+  --p-dialog-title-font-size : xx-large;
+  --p-dialog-title-font-weight : bold;
+}
+
+
+.p-dialog-header-actions{
+  position: absolute;
+  right: 0;
+  color: #FF5555 ;
+  height: fit-content;
+  font-size: 0;
+}
+.p-dialog-close-button{
+  min-width: 40px;
+  height: fit-content;
+  margin: 0;
+  justify-content: center;
+}

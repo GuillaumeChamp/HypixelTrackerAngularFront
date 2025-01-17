@@ -1,0 +1,12 @@
+main {
+  transition: opacity 0s ease-in-out 0s;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 1);
+}
+
+.menu-open {
+  width: 280px;
+}

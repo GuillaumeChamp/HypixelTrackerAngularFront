@@ -1,0 +1,8 @@
+<app-bazaar-header (newSearchEvent)="updateFilter()"
+                   (updateRequest)="updateData()"
+                   (toggleDrawerRequest)="toggleDrawer()">
+</app-bazaar-header>
+<main [class.sidenav-open]="drawerOpen">
+  <app-nav-drawer [isDrawerVisible]=drawerOpen [class.menu-open]="drawerOpen"></app-nav-drawer>
+  <app-bazaar-catalog [itemList]="itemList" [filter]="filter"></app-bazaar-catalog>
+</main>

@@ -1,0 +1,46 @@
+header {
+  z-index: 10; /* Stay on top */
+  border-color: var(--third-color);
+  border-style: solid;
+  border-width: 0 0 thin 0;
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--secondary-background-color);
+  text-align: center;
+  color: var(--primary-color);
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, .2), 0 0 0 0 rgba(0, 0, 0, .14), 0 0 0 0 rgba(0, 0, 0, .12);
+  width: 100%;
+}
+
+header .drawer-icon {
+  height: 40px;
+  width: 40px;
+  margin: auto 1rem;
+}
+
+header img {
+  height: 60px;
+  width: 60px;
+  margin-left: 1rem;
+}
+
+header h1 {
+  flex: 1 1;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.75rem;
+  text-transform: capitalize;
+  color: var(--third-color);
+}
+
+header #search-bar {
+  margin: 1rem 3px;
+}
+
+header #search-bar:focus {
+  outline-color: var(--third-color);
+}

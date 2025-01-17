@@ -1,0 +1,22 @@
+<div class="radio-container">
+  <p>Time Window : </p>
+  <div>
+    <input type="radio" id="hour" name="time" value="hour" checked (input)="updateData('hour')" />
+    <label for="hour">hour</label>
+  </div>
+
+  <div>
+    <input type="radio" id="day" name="time" value="day" (input)="updateData('day')"  />
+    <label for="day">day</label>
+  </div>
+
+  <div>
+    <input type="radio" id="week" name="time" value="week" (input)="updateData('week')" />
+    <label for="week">week</label>
+  </div>
+</div>
+<p-chart *ngIf="dataReady" type="line" [data]="chartData" [options]="option"></p-chart>
+<p-progressSpinner *ngIf="!dataReady"></p-progressSpinner>
+<h1 *ngIf="!dataReady"> loading data...</h1>
+<div *ngIf="craftDescription" [innerHTML]="craftDescription" class="craft-description"></div>
+

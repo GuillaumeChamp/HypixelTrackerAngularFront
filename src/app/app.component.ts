@@ -1,9 +1,9 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {BazaarComponent} from './bazaar/bazaar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [BazaarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

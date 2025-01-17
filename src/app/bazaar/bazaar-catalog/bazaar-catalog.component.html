@@ -1,0 +1,5 @@
+<section class="catalogue">
+  <article *ngFor="let item of getPrintableElement()" (click)="promptDetails(item)" (keydown.enter)="promptDetails(item)">
+    <app-bazaar-item-details [item]="item"></app-bazaar-item-details>
+  </article>
+</section>
