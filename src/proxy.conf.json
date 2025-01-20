@@ -1,8 +1,7 @@
 {
-  "/api": {
-    "target": "http://localhost:3030",
+  "/api/**": {
+    "target": "http://srv664396.hstgr.cloud:3030",
     "secure" : false,
-    "changeOrigin": true,
     "pathRewrite": {
       "^/api": ""
     }

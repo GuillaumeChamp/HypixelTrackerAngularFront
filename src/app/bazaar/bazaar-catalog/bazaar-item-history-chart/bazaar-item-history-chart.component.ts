@@ -4,7 +4,8 @@ import {UIChart} from 'primeng/chart';
 import {IPricingRecord} from '../../bazaarEntities/IPricingRecord';
 import {DynamicDialogConfig} from 'primeng/dynamicdialog';
 import {ItemService} from '../../item.service';
-import 'chartjs-adapter-moment'
+import 'chartjs-adapter-date-fns'
+
 import {NgIf} from '@angular/common';
 import {ProgressSpinner} from 'primeng/progressspinner';
 import {FormsModule} from '@angular/forms';

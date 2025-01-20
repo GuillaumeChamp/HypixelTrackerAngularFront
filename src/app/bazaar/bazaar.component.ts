@@ -4,13 +4,15 @@ import {BazaarHeaderComponent} from './bazaar-header/bazaar-header.component';
 import {BazaarCatalogComponent} from './bazaar-catalog/bazaar-catalog.component';
 import {ItemService} from './item.service';
 import {ItemModelUtils} from './bazaarEntities/ItemModelUtils';
+import {FooterComponent} from '../shared/footer/footer.component';
 
 @Component({
   selector: 'app-bazaar',
   imports: [
     NavDrawerComponent,
     BazaarHeaderComponent,
-    BazaarCatalogComponent
+    BazaarCatalogComponent,
+    FooterComponent
   ],
   templateUrl: './bazaar.component.html',
   styleUrl: './bazaar.component.css'
