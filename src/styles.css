@@ -24,7 +24,6 @@ body {
   min-height: 100vh;
   max-width: 100%;
   margin: 0;
-  padding-bottom: 2.5rem;
   background-color: var(--primary-background-color);
   border-color: var(--third-color);
   color: var(--primary-color);
@@ -53,18 +52,6 @@ body {
 .active {
   display: flex !important;
 }
-
-footer{
-  position: absolute;
-  bottom: 0;
-  flex-direction: row;
-  text-align: center;
-  vertical-align: center;
-  background-color: var(--secondary-background-color);
-  width: 100%;
-  height: 2.5rem;
-}
-
 
 .common {
   color: #FFFFFF !important;
@@ -105,6 +92,7 @@ footer{
 
 :root .p-dialog{
   border: 2px solid var(--p-dialog-border-color);
+  height: 80%;
 }
 
 .p-dialog-header{

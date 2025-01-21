@@ -1,9 +1,0 @@
-{
-  "/api/**": {
-    "target": "http://srv664396.hstgr.cloud:3030",
-    "secure" : false,
-    "pathRewrite": {
-      "^/api": ""
-    }
-  }
-}

@@ -21,7 +21,17 @@
   align-items: center;
   display: inline-flex;
   width: 100%;
+  height: fit-content;
+  margin: 1rem 0 0 1rem;
+
+}
+.radio-container p{
+  margin: 0 3px 0 0;
 }
 .craft-description{
   font-size: 1rem;
+  margin-bottom: 3px;
+}
+.history-chart{
+  margin-bottom: 3px;
 }

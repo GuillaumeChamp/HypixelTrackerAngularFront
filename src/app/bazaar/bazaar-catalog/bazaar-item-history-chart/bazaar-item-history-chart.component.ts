@@ -37,6 +37,8 @@ export class BazaarItemHistoryChartComponent {
 
   option = {
     responsive: true,
+    height: `100%`,
+    with : `100%`,
     scales: {
       x: {
         scaleLabel: {

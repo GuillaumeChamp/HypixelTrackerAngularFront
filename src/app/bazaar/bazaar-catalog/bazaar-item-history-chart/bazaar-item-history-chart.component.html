@@ -15,7 +15,7 @@
     <label for="week">week</label>
   </div>
 </div>
-<p-chart *ngIf="dataReady" type="line" [data]="chartData" [options]="option"></p-chart>
+<p-chart *ngIf="dataReady" type="line" [data]="chartData" width=100% height="100%" style="height: 100%" [options]="option" class="history-chart"></p-chart>
 <p-progressSpinner *ngIf="!dataReady"></p-progressSpinner>
 <h1 *ngIf="!dataReady"> loading data...</h1>
 <div *ngIf="craftDescription" [innerHTML]="craftDescription" class="craft-description"></div>

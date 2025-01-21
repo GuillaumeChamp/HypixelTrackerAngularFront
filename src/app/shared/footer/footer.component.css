@@ -1,0 +1,14 @@
+footer{
+  position: relative;
+  bottom: 0;
+  flex-direction: row;
+  text-align: center;
+  vertical-align: center;
+  background-color: var(--secondary-background-color);
+  width: 100%;
+  height: fit-content;
+}
+
+p{
+  margin: 3px;
+}

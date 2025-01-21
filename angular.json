@@ -64,12 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "HypixelTrackerAngularFront:build:production",
-              "proxyConfig": "src/proxy.conf.json"
+              "buildTarget": "HypixelTrackerAngularFront:build:production"
             },
             "development": {
-              "buildTarget": "HypixelTrackerAngularFront:build:development",
-              "proxyConfig": "src/proxy.conf.json"
+              "buildTarget": "HypixelTrackerAngularFront:build:development"
             }
           },
           "defaultConfiguration": "development"
