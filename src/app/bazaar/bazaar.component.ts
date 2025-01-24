@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {NavDrawerComponent} from '../shared/nav-drawer/nav-drawer.component';
 import {BazaarHeaderComponent} from './bazaar-header/bazaar-header.component';
 import {BazaarCatalogComponent} from './bazaar-catalog/bazaar-catalog.component';
-import {ItemService} from './item.service';
+import {ItemService} from '../services/item.service';
 import {ItemModelUtils} from './bazaarEntities/ItemModelUtils';
 import {FooterComponent} from '../shared/footer/footer.component';
 

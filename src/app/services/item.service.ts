@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {IItemModel} from './bazaarEntities/IItemModel';
-import {IPricingRecord} from './bazaarEntities/IPricingRecord';
+import {IItemModel} from '../bazaar/bazaarEntities/IItemModel';
+import {IPricingRecord} from '../bazaar/bazaarEntities/IPricingRecord';
 
 @Injectable({
   providedIn: 'root'

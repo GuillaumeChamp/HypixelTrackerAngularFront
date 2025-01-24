@@ -3,14 +3,24 @@
   width: 0;
 }
 
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
 .sidenav {
+  z-index: 5;
   color: rgb(170, 170, 170);
-  border-color: #ffc376;
-  border-style: solid;
-  border-width: thin thin thin 0;
-  height: calc(100% - 62px);
+  height: 89.8vh;
   width: 0;
-  position: relative;
+  position: fixed;
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.3s;
   background-color: rgb(66, 66, 66);
@@ -18,7 +28,7 @@
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 32px 8px 32px;
+  padding: 8px 16px 8px 16px;
   text-decoration: none;
   font-size: 25px;
   color: rgb(255, 255, 255);
@@ -32,5 +42,8 @@
 }
 
 .menu-open {
-  width: 280px;
+  width: 20vw;
+  border-color: #ffc376;
+  border-style: solid;
+  border-width: thin thin thin 0;
 }

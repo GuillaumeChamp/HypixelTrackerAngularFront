@@ -1,0 +1,6 @@
+<app-raw-header title="Museum tracker" (toggleDrawerRequest)="toggleDrawer()"></app-raw-header>
+<main [class.sidenav-open]="drawerOpen">
+  <app-nav-drawer [isDrawerVisible]=drawerOpen [class.menu-open]="drawerOpen"></app-nav-drawer>
+  <app-museum-body></app-museum-body>
+</main>
+<app-footer></app-footer>

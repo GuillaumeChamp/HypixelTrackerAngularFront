@@ -18,10 +18,27 @@
 :host, :root {
   font-family: customFont, serif;
 }
-
+header {
+  z-index: 256; /* Stay on top */
+  position: fixed;
+  border-color: var(--third-color);
+  border-style: solid;
+  border-width: 0 0 thin 0;
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-background-color);
+  text-align: center;
+  color: var(--primary-color);
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, .2), 0 0 0 0 rgba(0, 0, 0, .14), 0 0 0 0 rgba(0, 0, 0, .12);
+  width: 100%;
+  height: 10vh;
+}
 body {
   position: relative;
-  min-height: 100vh;
+  min-height: 97.1vh;
   max-width: 100%;
   margin: 0;
   background-color: var(--primary-background-color);
@@ -30,23 +47,12 @@ body {
   font-size: 1rem;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
+  padding-bottom: 1.6rem;
 }
 
 .multi-usage-button{
   flex: 1 0 0 0;
   text-align: center;
-}
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-
-  .sidenav a {
-    font-size: 18px;
-  }
 }
 
 .active {
