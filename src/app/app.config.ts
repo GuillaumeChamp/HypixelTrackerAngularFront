@@ -13,3 +13,6 @@ export const appConfig: ApplicationConfig = {
     providePrimeNG(),
     provideHttpClient()]
 };
+export const customConfig = {
+  apiPath : "http://srv664396.hstgr.cloud:3030"
+}

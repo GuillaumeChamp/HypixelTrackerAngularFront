@@ -15,12 +15,20 @@
   }
 }
 
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-width: 450px) {
+  .menu-open {
+    width: fit-content;
+  }
+}
+
+
 .sidenav {
   z-index: 5;
   color: rgb(170, 170, 170);
-  height: 89.8vh;
+  height: 100%;
   width: 0;
-  position: fixed;
+  position: relative;
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.3s;
   background-color: rgb(66, 66, 66);
@@ -42,7 +50,7 @@
 }
 
 .menu-open {
-  width: 20vw;
+  width: 15vw;
   border-color: #ffc376;
   border-style: solid;
   border-width: thin thin thin 0;

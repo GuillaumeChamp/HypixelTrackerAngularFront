@@ -1,0 +1,21 @@
+.museum-catalogue {
+  flex: auto;
+  margin: 0;
+  display: inline-list-item;
+  row-gap: normal;
+}
+article {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  padding: 4px;
+}
+
+article:hover {
+  border-color: #ffc376;
+}
+.filter-div{
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  font-size: 1.5rem;
+  justify-content: center;
+}

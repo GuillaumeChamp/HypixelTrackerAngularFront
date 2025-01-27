@@ -1,0 +1,11 @@
+<div class="filter-div">
+  <label>
+    hide owned items :
+    <input type="checkbox" id="hide-owned" (change)="hideOwned=!hideOwned">
+  </label>
+</div>
+<section class="museum-catalogue">
+  <article *ngFor="let item of getItemToDisplay()">
+    <app-museum-item [item]="item"></app-museum-item>
+  </article>
+</section>

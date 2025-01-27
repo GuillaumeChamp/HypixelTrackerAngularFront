@@ -3,12 +3,13 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {IItemModel} from '../bazaar/bazaarEntities/IItemModel';
 import {IPricingRecord} from '../bazaar/bazaarEntities/IPricingRecord';
+import {customConfig} from '../app.config';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ItemService {
-  pathToApi = "http://srv664396.hstgr.cloud:3030"
+  pathToApi = customConfig.apiPath
 
   constructor(private readonly http: HttpClient) {
   }

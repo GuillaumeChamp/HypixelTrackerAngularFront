@@ -12,7 +12,7 @@ header img {
 
 header h1 {
   flex: 1 1;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.75rem;
@@ -26,4 +26,10 @@ header #search-bar {
 
 header #search-bar:focus {
   outline-color: var(--third-color);
+}
+
+.header-button{
+  flex: auto;
+  text-align: center;
+  height: 2.2rem;
 }

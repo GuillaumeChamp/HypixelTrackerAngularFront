@@ -5,18 +5,17 @@
   flex: auto;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   row-gap: normal;
 }
 
 article {
   border: 5px solid rgba(255, 255, 255, 0.6);
   padding: 4px;
-  max-width: 100%;
 }
 
 article:hover {
-  border: 5px solid #ffc376;
+  border-color: #ffc376;
   cursor: pointer;
 }
 

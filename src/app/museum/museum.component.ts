@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {FooterComponent} from "../shared/footer/footer.component";
 import {NavDrawerComponent} from "../shared/nav-drawer/nav-drawer.component";
 import {RawHeaderComponent} from '../shared/raw-header/raw-header.component';
