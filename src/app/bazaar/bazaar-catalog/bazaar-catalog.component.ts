@@ -29,7 +29,6 @@ export class BazaarCatalogComponent {
   }
 
   promptDetails(item: IItemModel) {
-    console.log(this.itemList.filter((item)=>item.tier===undefined))
     this.selectedItem = item;
     let craftString = ItemModelUtils.stringifyCraft(this.selectedItem, this.itemList);
     this.ref = this.dialogService.open(BazaarItemHistoryChartComponent, {

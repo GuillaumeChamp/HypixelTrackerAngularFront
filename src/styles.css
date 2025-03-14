@@ -4,20 +4,22 @@
   src: url(/assets/myFont.ttf);
 }
 
-:root{
-  --primary-color : #FFF;
-  --secondary-color : rgb(170, 170, 170);
-  --third-color : #ffc376;
-  --primary-background-color : rgba(0, 0, 0, 1);
-  --secondary-background-color : rgb(66, 66, 66);
-  --p-mask-background : rgba(66, 66, 66,0.5);
-  --p-dialog-color : var(--primary-color);
-  --p-dialog-border-color : var(--third-color);
-  --p-dialog-background : var(--secondary-background-color);
+:root {
+  --primary-color: #FFF;
+  --secondary-color: rgb(170, 170, 170);
+  --third-color: #ffc376;
+  --primary-background-color: rgba(0, 0, 0, 1);
+  --secondary-background-color: rgb(66, 66, 66);
+  --p-mask-background: rgba(66, 66, 66, 0.5);
+  --p-dialog-color: var(--primary-color);
+  --p-dialog-border-color: var(--third-color);
+  --p-dialog-background: var(--secondary-background-color);
 }
+
 :host, :root {
   font-family: customFont, serif;
 }
+
 header {
   z-index: 10; /* Stay on top */
   border-color: var(--third-color);
@@ -34,6 +36,20 @@ header {
   box-shadow: 0 0 0 0 rgba(0, 0, 0, .2), 0 0 0 0 rgba(0, 0, 0, .14), 0 0 0 0 rgba(0, 0, 0, .12);
   width: 100%;
 }
+
+.horizontal-div{
+  border: thin solid var(--third-color);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--primary-color);
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  padding-left: 1rem;
+}
+
 body {
   position: relative;
   min-height: 100vh;
@@ -53,6 +69,7 @@ body {
     display: none;
   }
 }
+
 .active {
   display: flex !important;
 }
@@ -94,35 +111,36 @@ body {
   text-decoration: line-through;
 }
 
-:root .p-dialog{
+:root .p-dialog {
   border: 2px solid var(--p-dialog-border-color);
   height: 80%;
 }
 
-.p-dialog-header{
+.p-dialog-header {
   width: 100%;
   height: fit-content;
   background-color: var(--third-color);
 }
 
-.p-dialog-title{
+.p-dialog-title {
   width: 100%;
   height: fit-content;
   text-align: center;
   background-color: var(--third-color);
-  --p-dialog-title-font-size : xx-large;
-  --p-dialog-title-font-weight : bold;
+  --p-dialog-title-font-size: xx-large;
+  --p-dialog-title-font-weight: bold;
 }
 
 
-.p-dialog-header-actions{
+.p-dialog-header-actions {
   position: absolute;
   right: 0;
-  color: #FF5555 ;
+  color: #FF5555;
   height: fit-content;
   font-size: 0;
 }
-.p-dialog-close-button{
+
+.p-dialog-close-button {
   min-width: 40px;
   height: fit-content;
   margin: 0;

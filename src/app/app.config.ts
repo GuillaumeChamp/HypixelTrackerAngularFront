@@ -14,5 +14,5 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient()]
 };
 export const customConfig = {
-  apiPath : "http://srv664396.hstgr.cloud:3030"
+  apiPath : "http://localhost:3030"
 }
