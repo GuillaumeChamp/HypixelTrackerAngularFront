@@ -14,5 +14,5 @@ export const appConfig: ApplicationConfig = {
     provideHttpClient()]
 };
 export const customConfig = {
-  apiPath : "http://localhost:3030"
+  apiPath : "/services"
 }
