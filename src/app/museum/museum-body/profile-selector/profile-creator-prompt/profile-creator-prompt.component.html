@@ -1,0 +1,10 @@
+<div class="horizontal-div">
+  <input type="text" [(ngModel)]="username" placeholder="enter username" id="username-text-field" (keydown.enter)=fetchUuid() class="most-left-element">
+  <button id="request-uuid" (click)="fetchUuid()" class="most-right-element">Validate</button>
+</div>
+
+<div *ngIf="foundMinecraftAccount" class="horizontal-div">
+  <p>uuid : {{foundMinecraftAccount.uuid}}</p>
+  <p>username : {{foundMinecraftAccount.name}}</p>
+  <img ngSrc="{{foundMinecraftAccount.urlPath}}" alt="player icon" width="180" height="180">
+</div>

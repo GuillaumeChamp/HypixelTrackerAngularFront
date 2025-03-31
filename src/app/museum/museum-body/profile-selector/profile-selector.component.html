@@ -1,0 +1,5 @@
+<input type="text" list="profiles" placeholder="select profile" id="profile-selector" class="most-left-element" (keydown.enter)="promptNewProfile()">
+<datalist id="profiles">
+  <option *ngFor="let profile of profileList">{{profile}}</option>
+</datalist>
+<button id="new-profile" (click)="promptNewProfile()" class="most-right-element">New Profile</button>
