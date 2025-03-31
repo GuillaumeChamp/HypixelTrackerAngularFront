@@ -5,6 +5,7 @@ import {BazaarCatalogComponent} from './bazaar-catalog/bazaar-catalog.component'
 import {ItemService} from '../services/item.service';
 import {ItemModelUtils} from './bazaarEntities/ItemModelUtils';
 import {FooterComponent} from '../shared/footer/footer.component';
+import {NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-bazaar',
@@ -12,7 +13,8 @@ import {FooterComponent} from '../shared/footer/footer.component';
     NavDrawerComponent,
     BazaarHeaderComponent,
     BazaarCatalogComponent,
-    FooterComponent
+    FooterComponent,
+    NgIf
   ],
   templateUrl: './bazaar.component.html',
   styleUrl: './bazaar.component.css'

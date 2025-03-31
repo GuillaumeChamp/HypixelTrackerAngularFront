@@ -4,6 +4,7 @@
 </app-bazaar-header>
 <main [class.sidenav-open]="drawerOpen">
   <app-nav-drawer [isDrawerVisible]=drawerOpen [class.menu-open]="drawerOpen"></app-nav-drawer>
-  <app-bazaar-catalog [itemList]="itemList" [filter]="filter"></app-bazaar-catalog>
+  <p *ngIf="!itemList" class="no-data-warning">No data, wait a moment and reload the page</p>
+  <app-bazaar-catalog *ngIf="itemList" [itemList]="itemList" [filter]="filter"></app-bazaar-catalog>
 </main>
 <app-footer></app-footer>
