@@ -56,10 +56,14 @@ export class ItemModelUtils {
   }
 
   /**
-   * compare two items
+   * Compare two bazaar items
    * @param item1 first item
    * @param item2 second item
-   * @returns {number} a number which the sign indicate if it needs to swap order
+   * @returns {number} A number whose sign indicates the relative order of the two elements: negative if item1 is after item2, positive if item1 is before item2, and zero if they are equal.
+   *  - category
+   *  - tag
+   *  - rarity
+   *  - price (highest first)
    */
   public static compare(item1: IItemModel, item2: IItemModel): number {
     if (!item1.pricing) {
@@ -68,14 +72,17 @@ export class ItemModelUtils {
     if (!item2.pricing) {
       return 1;
     }
-    let compare = item1.category.localeCompare(item2.category);
-    if (compare !== 0 || item1.tag === undefined) {
+
+    let item1CategoryIndex = BazaarConst.CATEGORY_ORDERED_LIST.indexOf(item1.category)
+    let item2CategoryIndex = BazaarConst.CATEGORY_ORDERED_LIST.indexOf(item2.category)
+    let compare = item1CategoryIndex - item2CategoryIndex;
+    if (compare != 0 || item1.tag === undefined || item2.tag === undefined) {
       // if items belong to the same category we continue using tag
       return compare;
     }
-    // while comparing tag we ignore the opportunity tag by design
-    compare = item1.tag.replace(`,${BazaarConst.OPPORTUNITY}`, '').localeCompare(item2.tag?.replace(`,${BazaarConst.OPPORTUNITY}`, ''));
-    if (compare !== 0) {
+
+    compare = item1.tag.localeCompare(item2?.tag);
+    if (compare != 0) {
       // if items have the same category and tag we continue using rarity
       return compare;
     }

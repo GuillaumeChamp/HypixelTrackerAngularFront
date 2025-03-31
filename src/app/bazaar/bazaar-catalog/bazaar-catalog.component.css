@@ -3,10 +3,10 @@
 }
 .catalogue {
   flex: auto;
-  margin: 0;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   row-gap: normal;
+  margin: 0 0 1.4rem;
 }
 
 article {

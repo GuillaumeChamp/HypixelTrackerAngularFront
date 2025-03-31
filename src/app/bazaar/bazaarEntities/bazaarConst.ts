@@ -6,4 +6,35 @@ export class BazaarConst {
   public static readonly OPPORTUNITY_CRAFT_AND_SELL = 'craft and sell it'
 
   public static readonly TIERS_LIST = ['COMMON', 'UNCOMMON', 'RARE', 'EPIC', 'LEGENDARY'];
+  public static CATEGORY_ORDERED_LIST = [
+    'Booster Cookie',
+    'Stock of Stonks',
+    'Farming',
+    'Mining',
+    'Combat',
+    'Slayer',
+    'The End',
+    'Crimson Isle',
+    'Catacombs',
+    'Woods',
+    'Fishing',
+    'Item Upgrade',
+    'Wither Scrolls',
+    'Master Star',
+    'Book Modifiers',
+    'EXP Bottles',
+    'Consumables',
+    'Event',
+    'Pet',
+    'Essence',
+    'Fuels',
+    'Beacon Fuels',
+    'Power Stone',
+    'Minion Fuels',
+    'Minion Upgrades',
+    'Inferno Minion',
+    'Cross-Dimensional',
+    'Fragments',
+    'Reforge Stone'
+  ]
 }
