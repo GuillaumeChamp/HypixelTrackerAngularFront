@@ -26,6 +26,7 @@
 .sidenav {
   z-index: 5;
   color: rgb(170, 170, 170);
+  min-height: 85vh;
   height: 100%;
   width: 0;
   position: relative;

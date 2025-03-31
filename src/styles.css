@@ -22,20 +22,58 @@
 
 header {
   z-index: 10; /* Stay on top */
-  border-color: var(--third-color);
-  border-style: solid;
-  border-width: 0 0 thin 0;
   display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
   align-items: center;
   background-color: var(--secondary-background-color);
   text-align: center;
   color: var(--primary-color);
-  flex-direction: row;
   justify-content: space-between;
   overflow: hidden;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, .2), 0 0 0 0 rgba(0, 0, 0, .14), 0 0 0 0 rgba(0, 0, 0, .12);
   width: 100%;
+  max-height: 10vh;
 }
+
+header h1 {
+  flex: 1 1;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1.75rem;
+  text-transform: capitalize;
+  color: var(--third-color);
+}
+
+
+header img {
+  height: 60px;
+  width: 60px;
+  margin-left: 1rem;
+}
+
+header .drawer-icon {
+  height: 40px;
+  width: 40px;
+  margin: auto 1rem;
+}
+
+
+header #search-bar {
+  margin-right: 3px;
+}
+
+header #search-bar:focus {
+  outline-color: var(--third-color);
+}
+
+.header-button{
+  flex: auto;
+  text-align: center;
+  height: 2.2rem;
+}
+
 
 .horizontal-div{
   border: thin solid var(--third-color);
@@ -58,10 +96,8 @@ body {
   background-color: var(--primary-background-color);
   border-color: var(--third-color);
   color: var(--primary-color);
-  font-size: 1rem;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
-  padding-bottom: 1.6rem;
 }
 
 @media screen and (max-width: 768px) {
