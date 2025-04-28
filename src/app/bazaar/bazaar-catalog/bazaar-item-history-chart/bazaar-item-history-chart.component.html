@@ -14,6 +14,16 @@
     <input type="radio" id="week" name="time" value="week" (input)="updateData('week')" />
     <label for="week">week</label>
   </div>
+
+  <div>
+    <input type="radio" id="month" name="time" value="month" (input)="updateData('month')" />
+    <label for="month">month</label>
+  </div>
+
+  <div>
+    <input type="radio" id="year" name="time" value="year" (input)="updateData('year')" />
+    <label for="year">year</label>
+  </div>
 </div>
 <p-chart *ngIf="dataReady" type="line" [data]="chartData" width=100% height="100%" style="height: 100%" [options]="option" class="history-chart"></p-chart>
 <p-progressSpinner *ngIf="!dataReady"></p-progressSpinner>
